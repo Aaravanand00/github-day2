@@ -154,14 +154,26 @@
 # marks[ :4] is same as marks[0:4]
 # marks[1: ] is same as marks[1:len(marks)]
 # marks[-3:-1] is [33,95] 
-
-# List Methods
-# list = [2,1,3]
-# list.append(4)
-
-
 # a = 15
 # print(str(a))
 # print(type(a))
 # print(type(str(a)))
+
+while True:
+    a = int(input('enter a no:'))
+    b = int(input('enter another no:'))
+
+
+    try:
+        res=a/b
+
+    except ZeroDivisionError:
+        print("pls don't give the value 0 to denominator")
+    except ValueError:
+        print("pls enter integer input")
+    else:
+        print(res)
+
+    finally:
+        print("my code is running well")
 
