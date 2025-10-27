@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+        }
+        body{
+            height: 100vh;
+            background-color: skyblue;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            overflow: hidden;
+        }
+        .road
+        {
+           height: 30vh;
+           background-color: gray; 
+           position: absolute;
+           bottom: 0%;
+           width: 100%;
+        }
+        .truck{
+            height: 60px;
+            width: 150px;
+            background-color: red;
+            position: absolute;
+            bottom: 100px;
+            border-radius: 10px;
+            left: -150px;
+            animation: move 5s linear infinite;
+            
+        }
+        .wheel{
+            height: 40px; 
+            width: 40px;
+            background-color: black;
+            position: absolute;
+            border-radius: 50%;
+             bottom: -15px; 
+        }
+        .right{
+            right: 15px;
+        }
+        .left{
+            left: 15px;
+        }
+        @keyframes move {
+            from{
+                left: -150px;
+            }to{
+                left: 100vw;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="road"></div>
+      <div class="truck"></div>
+        <div class="wheel left"></div>
+        <div class="wheel right"></div>
+</body>
+</html>

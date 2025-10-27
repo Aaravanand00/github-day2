@@ -1,0 +1,428 @@
+/* Notes of CSS
+/* Basic Syntax of CSS(Cascading Style Sheets) */
+/* h1{
+     color:red;  */
+/* } */
+/* color=property,red=value */
+
+/* Including style */
+/* Inline */
+/* <h1 style="color:blue;">Hello World</h1> */
+
+/* <Style>tag  */
+/* <style> */
+       /* h1{ */
+            /* color: green; */
+       /* } */
+/* </style> */ 
+
+/* Color Property: 
+color:red; color:pink; color:blue; color:green;
+
+Background-color Property:
+background-color:red ; background-color:pink; background-color:blue; background-color:green;
+
+Color Systems:
+RGB 
+color:rgb(255,0,0);
+color:rgb(0,255,0);
+
+Hex(Hexadecimal)
+color:#ff0000;(red)
+color:#00ff00;(green)
+color:#0000ff;(blue)
+
+Selectors: 
+Universal Selector *{}
+Element Selector h1{}
+Id Selector #myId{} */
+/* Class Selector .myClass{} */
+
+
+
+/* Practice Set1
+ #box {
+    background-color: blue;
+    color:white;
+ }
+
+ /* .heading{
+    color: red;
+ } */
+
+ /* h1,h2,h3{ */
+    /* color: red; */
+ /* } */
+
+
+
+
+
+/* Jo phele aata h uski baat pheli suni jati hai  */
+/* inline style ko jyada priority milti h 3 jagah button color likha par priority inline style ko mili h pink color aaya h */
+
+/* Text Properties:
+text-align:left/right/center.
+text-decoration:underline/overline/line-through.
+font-weight:normal/bold/bolder/lighter 
+font-weight:100-900 
+font-family:arial 
+font-family: arial,roboto 
+
+Units in CSS: 
+Absolute 
+pixels(px)
+96px = 1 inch 
+font-size:2px; 
+
+Line Height: 
+line-height:2px 
+line-height:3 
+line-height: normal 
+
+Text Transformation: 
+text-tranform: uppercase/lowercase/capitalize/none  */
+
+
+
+ /* Practice set-2 */
+ 
+ /* *{ */
+    /* font-family: "Times New Roman ";
+ }
+ h1{
+    text-align: center;
+    text-transform: capitalize;
+ }
+ 
+ #outer{
+    font-size: 25px;
+ }
+ #inner{
+    font-size: 10px;
+ } */
+
+
+
+
+
+
+
+
+
+/* box model in css:
+height
+width 
+border 
+padding 
+margin 
+
+Height and Width: By default , it sets the content area height and width  of the element 
+
+div{
+    height:50px;
+    width:200px; 
+}
+
+Border: Used to set an element's border 
+
+border-width:2px;
+border-style:solid/dotted/dashed/double/none;
+border-color: red/blue/green/black;
+
+border:2px solid red; (shorthand property) 
+/* 
+Border: Used to round the corners of an element's ourter border edge 
+
+border-radius:10px; */
+/* border-radius:50%; (circle)
+
+Padding: 
+padding-left
+padding-right
+padding-top
+padding-bottom
+padding:10px 20px 30px 40px; (top,right,bottom,left -> clockwise)
+
+Margin: 
+margin-right
+margin-left
+margin-top
+margin-boottom */
+/* margin:10px 20px 30px 40px; (top,right,bottom,left -> clockwise) */
+
+/* Practice Sett-3 */
+
+/* #box{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    border-radius: 50%;
+} */
+
+/* *{
+    padding: 0;
+    margin:0;
+    color: white;
+}
+#navbar{
+    height: 60px;
+    background-color:#0f1111 ;
+}
+button{
+    background-color: #f18e0d;
+    color: white;
+}
+#logo{
+    color: #f08804;
+    font-size: 25px; */
+/* }
+a{
+    margin-right: 250px;
+    text-decoration: none;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Display Property: 
+display: inline/block/inlinr-block/none 
+inline: takes only  the space required by the element.(no margin/padding)
+block: takes full space available in width 
+inline-block: Similar  to inline but we can set margin&padding.
+none: To remove element from document flow. */ */
+
+/* Visibility Property:
+visibility:visible/hidden;
+Note: When visiblity is set to none, space for the element is reserved.
+But for display set to none , no space is reserved or blocked for the element.
+
+Alpha Channel: 
+opacity(0 to 1);
+RGBA: 
+color:rgba(255,0,0,0.5); (red with 50% opacity)
+color:rgba(255,0,0,1); (red with 100% opacity) 
+
+/* Practice Set-4 */
+
+#contentbox{
+    height: 10px;
+    width: 10px; 
+    border: 2px solid black;
+    background-color: aquamarine;
+}
+*{
+    padding: 0;
+    margin:0;
+    color: white;
+}
+#navbar{
+    height: 60px;
+    background-color:#0e1717 ;
+}
+button{
+    background-color: #f18e0d;
+    color: white;
+}
+#logo{
+    color: #f08804;
+    font-size: 25px; 
+ }
+a{
+    margin-right: 250px;
+    text-decoration: none;
+}
+
+footer{
+    position: fixed;
+    text-align: center;
+    padding: 10x;
+    bottom: 0; 
+    left: 0;
+    width: 100%;
+    background-color: #0f1111;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Unit in css: 
+Relative Units: 
+%,em,rem  */
+
+/* Percentage(%): It is oftten used to define a size as relative to an element's parent obj.
+width:33%;
+margin-left:50%; */
+
+/* Em: Font size of the parent,in the case of typographical properties like font-size,and font size of the element itself,in the case of the other properties like width.
+
+Rem: Font size of the root element(html) 
+
+Others 
+vh:relative to 1% viewport height 
+vw: relative to 1% viewport width 
+
+Position: The position CSS property sets how an element is positioned in a document. 
+
+position:ststic/relative/absolute/fixed/sticky; */ */
+
+/* Static-Default position(The top,right,bottom,left,and z-index properties have no effect)
+Relative- Element is relative to itself.(The top,right,bottom,left,and z-index will work)
+Absolute- Positioned relative to its closet positioned ancestor. (removed from the flow)
+Fixed- Positioned relative to browser.(removed from flow)
+Sticky- Positioned based on user's scroll position.
+
+Z-index:It decides the stack level of elements 
+        Overlapping elements with a larger z-index cover those with a smaller one.
+
+                z-index:auto(0)
+                z-index:1/2/....
+                z-index:-1/-2/.... 
+
+Background Image: Used to set an image as background 
+background-image:url('image.jpg'); */
+/* background-repeat:repeat/no-repeat/repeat-x/repeat-y;
+background-size:cover/contain/auto;
+background-position:center/top/bottom/left/right;
+
+/* Practice Set-5 */
+
+/* Flexbox: Flexible Box Layout 
+It is one-dimensional layout method for arranging items in rows or columns. 
+
+Flexbox Direction: It sets how flex items are placed in the flex container,alog which axis and direction. 
+flex-direction: row;(default)
+flex-direction: row-reverse;
+flex-direction:column;
+flex-direction:column-reverse;
+
+ For Flex Container:
+ justify-content: alingment along the main axis.
+ flex-start/flex-end/centre/space-between/space-around/space-evenly;
+ flex-wrap: nowrap/wrap/wrap-reverse;
+ align-items: alignment along the cross axis.
+ align-content: alingment of space between & around the content along cross-axis  */
+
+    /* For Flex Items:
+    align-self: alingment of individual along the cross axis.
+    flex-grow: how much a flex item will grow relative to the rest of the flex items if space is available.
+    flex-shrink: how much a flex item will shrink relative to the rest of the flex items if space is available. 
+    
+/* Practice Set-6 */
+
+/* Media Queries: Help to create responsive website.
+
+@media(width:600px){
+    div{
+        background-color:red;
+    } */
+/* } */
+
+/* @media(min-width: 600px){ */
+    /* div{ */
+        /* background-color: red; */
+    /* } */
+/* } */
+
+
+
+/* @media(min-width: 200px) and (min-width: 400px) { */
+    /* div{ */
+        /* background-color:red; */ */
+    /* } */
+/* } */
+
+/* Practice Set-7 */
+
+/* Transitions 
+Transitions enable you to define the transitionn between two states of an element.
+
+transition-property: property you want to transition (font-size,width etc.)
+transition-duration:2s/4ms..
+transition-timing-function:ease/ease-in/ease-out/linear/steps..
+transition-delay:2s/4ms.. */
+
+/* Transition Shorthand Property:  */
+/* property name|duration|timing-function|delay
+transition: font-size 2s ease-in-out 0.2s; 
+
+CSS Transform:  */
+/* Used to apply 2D or 3d transformations to an element */
+
+/* Rotate */
+/* transform: rotate(20deg); */
+
+/* Scale  */
+/* transform: scale(2); */
+/* transform: scale(0.5); */
+/* transform: scale(1,2);  */
+
+/* transform: scaleX(0.5); */
+/* transform: scaleY(0.5); */
+
+/* Translate */
+/* transform: translate(20px); */
+/* transform: translate(20px,50px); */ */
+
+/* transform: translateX(20px); */
+/* transform: translateY(20px); */
+
+/* Skew */
+/* transform: skew(30deg); */
+
+
+/* Animation:To animate CSS elements  */
+/* @keyframe myName{ */
+    /* from{font-size:20px;} */
+    /* to{font: size 40px;} */
+/* } */
+
+/* Animation Properties:  */
+/* animation-name
+animation-duration
+animation-timing-function
+animation-delay
+animation-duration
+animation-iteration-count
+animation-direction
+
+Animation Shorthand Property:
+animation: myName 2s linear 3s infinite noemal  */
+/* 
+
+% in Animation 
+
+@keyframe myName {
+    0%{font-size:20px}
+    50%{fonr-size:30px}
+    100%{font-size:40px} */
+/* } */
+
+/* Practice Set-8 */

@@ -1,0 +1,86 @@
+/* Basic Page Styling */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f3f4f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Login Box Styling */
+.login-container {
+  background-color: #ffffff;
+  padding: 40px 50px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  width: 320px;
+}
+
+/* Heading */
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+/* Labels */
+label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: #444;
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 15px;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+/* Submit Button */
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Extra Note */
+.note {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+  color: #555;
+}
+
+.note a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+.note a:hover {
+  text-decoration: underline;
+}

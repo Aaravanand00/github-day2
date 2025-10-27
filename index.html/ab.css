@@ -1,0 +1,39 @@
+*{
+    margin:0;
+    padding:0;
+    color:white; 
+}
+/* div{
+    height:100px;
+    width:100px;
+    background-color:green;
+    border-radius:40%;
+}
+div:hover{
+    background-color:blue;
+    transform:rotate(40deg);
+    transition:2s;
+}
+div:active{
+    background-color:red;
+    transform:rotate(0deg);
+    transition:9s; */
+
+#navbar{
+    height: 60px;
+    background-color: #0f1111;
+}
+
+button{
+    background-color: #f08804;
+}
+
+#logo{
+    background-color:#f08804;
+    font-size:25px;
+}
+
+a{
+    margin-right:250px;
+}
+
