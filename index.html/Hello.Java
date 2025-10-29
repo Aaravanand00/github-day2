@@ -1018,4 +1018,47 @@
 // }
 
 
-             //Final Keyword
+             //Final Keyword - variable , method , class 
+
+// class Hello
+// {
+//         public static void main(String a[])
+//         {
+//                 final int num = 8;
+//                 // num = 9;
+//                 System.out.println(num);
+//         }
+// }
+
+class Calc 
+{
+        public void show()
+        {
+           System.out.println("In Calc Show"): 
+        }
+        public void add(int a,int b)
+        {
+                System.out.println(a+b);
+        }
+}
+
+class AdvCalc extends Calc 
+{
+        public void show()
+        {
+                System.out.print("By Jhon");
+        }
+}
+
+class Hello 
+{
+        public static void main(String a[])
+        {
+             Calc obj = new Calc();
+             obj.show();
+             obj.add(4,3);   
+        }
+}
+
+
+
