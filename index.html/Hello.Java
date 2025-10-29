@@ -1034,11 +1034,11 @@ class Calc
 {
         public void show()
         {
-           System.out.println("In Calc Show"): 
+           System.out.println("By Navin");
         }
         public void add(int a,int b)
         {
-                System.out.println(a+b);
+            System.out.println(a+b);
         }
 }
 
@@ -1050,13 +1050,13 @@ class AdvCalc extends Calc
         }
 }
 
-class Hello 
+class Hello
 {
         public static void main(String a[])
         {
-             Calc obj = new Calc();
+             AdvCalc obj = new AdvCalc();
              obj.show();
-             obj.add(4,3);   
+             obj.add(4,5);   
         }
 }
 
