@@ -1052,7 +1052,7 @@ class AdvCalc extends Calc
 
 class Hello
 {
-        public static void main(String a[])
+        public static void main(String  args[])
         {
              AdvCalc obj = new AdvCalc();
              obj.show();
